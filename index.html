@@ -30,6 +30,7 @@ window.onload = function() {
   let bounds = [[0,0],[-512,512]];
 
   let baseLayers = {
+    'overworld_64k_new': L.tileLayer('tiles/overworld_64k_new/{z}/{y}/{x}.webp', { tileSize: 512, maxNativeZoom: 7, bounds: bounds, }),
     'overworld_64k': L.tileLayer('tiles/overworld_64k/{z}/{y}/{x}.webp', { tileSize: 512, maxNativeZoom: 7, bounds: bounds, }),
     'sky_64k': L.tileLayer('tiles/sky_64k/{z}/{y}/{x}.webp', { tileSize: 512, maxNativeZoom: 7, bounds: bounds, }),
     'underworld_64k': L.tileLayer('tiles/underworld_64k/{z}/{y}/{x}.webp', { tileSize: 512, maxNativeZoom: 7, bounds: bounds }),
